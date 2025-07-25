@@ -1,0 +1,540 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    background-color: #3A0A5A;/* here add colour combination */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #EF88AD;
+}
+
+.nav_list {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;/* here add colour combination */
+    font-weight: 500;
+}
+.nav_list a {
+    text-decoration: none;
+    color: white;/* here add colour combination */
+    transition: all 0.3s;
+}
+.download_btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d_btn {
+    padding: 12px 20px;
+    border: none;
+    font-size: 13.3px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #A53860;/* here add colour combination */
+    color: white;/* here add colour combination */
+    transition: all 0.3s;
+}
+
+.d_btn:hover {
+    background-color: #670D2F;/* here add colour combination */
+    /* cursor: pointer; */
+}
+
+.d_btn:active {
+    background-color: #3A0A5A; /*here add colour combination*/
+
+}
+
+/* Main Section */
+main {
+    width: 100%;
+}
+
+main .hero {
+    display: flex;
+    height: 600px;
+}
+
+.hero_leftside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.name_tag {
+    margin-top: 21px;
+    background: #670D2F; /* here add colour combination */
+    color: white;/* here add colour combination */
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: fit-content;
+
+}
+
+.top_layer {
+    width: 76%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top_layer h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #3A0A5A; /* here add colour combination */
+
+    margin: 0px 0px 0px 0px;
+}
+
+.top_layer p {
+    color: #3A0A5A; /* here add colour combination */
+
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hire_btn {
+    padding: 12px 20px;
+    border: none;
+    font-size: 13.3px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #A53860; /* here add colour combination */
+
+    color: white; /* here add colour combination */
+
+    transition: all 0.3s;
+}
+
+.hire_btn:hover {
+    background-color: #670D2F;
+    cursor: pointer;
+}
+
+.logo_layer {
+    width: 76%;
+    height: 150px;
+    /* background-color: #9360b5; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logos {
+    height: 40px;
+    width: 40px;
+    /* background-color: #3A0A5A; */
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_rightside {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_container {
+    background-image: url(./Thumbnails/rajkishore\ pass\ img.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 320px;
+    height: 340px;
+    border-radius: 50%;
+    border:none;
+}
+
+/* scroll button section starts*/
+.scroll_button_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll_btn {
+    background-color: #670D2F; /* here add colour combination */
+
+    width: 150px;
+    height: 50px;
+    color: white; /* here add colour combination */
+
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
+}
+.scroll_btn:hover {
+    background-color:#A53860 ; /* here add colour combination */
+
+    cursor: pointer;
+}
+
+/* scroll button section ends*/
+/* ---------------------------------------------------------- */
+/* about section start  */
+.container {
+    width: 100%;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.container>h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 48px;
+    color: #3a3a3a; /* here add colour combination */
+
+}
+
+/* Wrapper for intro and skills */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Intro box */
+.intro-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.1);
+    padding: 20px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 180px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.intro-box h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #3a3a3a; /* here add colour combination */
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro-box p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #555555; /* here add colour combination */
+
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.btn-download {
+    background-color: #3a0a5a; /* here add colour combination */
+
+    color: white; /* here add colour combination */
+
+    font-size: 13.3px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #670d2f; /* here add colour combination */
+
+}
+
+/* Skills container */
+.skills {
+    display: flex;
+    width: 50%;
+    line-height: 28px;
+}
+
+.skill-group>h3 {
+    margin: 15px;
+    text-align: center;
+}
+.frontend_width{
+    width: 200px;
+}
+.skill-tag{
+    font-size: 14px;
+    padding: 2px 10px;
+    background-color:#EF88AD; /* here add colour combination */
+
+    border-radius: 5px;
+}
+/* about section start  */
+/* ----------------------------------------------------------------------- */
+
+/* project section starts*/
+.project_section{
+    width: 100%;
+    padding: 80px 10%;
+    text-align: center;
+    /* background-color: #3a0a5a; */
+}
+.project_section>h1{
+    font-size: 24px;
+    font-weight: 600;
+    /* background-color: #b81f5a; */
+    margin-bottom: 80px;
+}
+.project_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    box-shadow: 1px 8px 10px 2px rgb(154, 152, 152);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.project_box::after{
+    content: "";
+    position: absolute;
+    background-color: rebeccapurple; /* here add colour combination */
+
+    color: white; /* here add colour combination */
+
+    width: 100%;
+    height: 100%;
+    top: 250px;
+    transition: all 0.5s;
+    z-index: -1;
+}
+.project_box:hover::after{
+    top: 0;
+}
+.project_box > i {
+    font-size: 50px;
+    color: rgb(0, 181, 231); /* here add colour combination */
+
+    margin-bottom: 25px;
+}
+.project_box > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.project_box label {
+    font-size: 15px;
+    color: rgb(119, 119, 119); /* here add colour combination */
+
+}
+.project_box:hover i,
+.project_box:hover h3,
+.project_box:hover label {
+    color: white; /* here add colour combination */
+
+}
+/* project section ends*/
+/* -------------------------------------------------------------------------- */
+/* contact section starts */
+
+.contact_section{
+    width: 100%;
+    padding: 80px 10%;
+    text-align: center;
+}
+.top_header h1 {
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    margin-bottom: 10px;
+}
+.top_header span {
+    color: rgb(153, 153, 153); /* here add colour combination */
+
+}
+.top_header{
+    margin-bottom: 80px;
+}
+.contact_row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.contact_colomn{
+    display: flex;
+    width: 50%;
+}
+.contact_info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 315px;
+    background:#670d2f; /* here add colour combination */
+
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px rgb(152, 152, 152); /* here add colour combination */
+
+    overflow: hidden;
+    z-index: 1;
+}
+.contact_info> h2{
+    color: white; /* here add colour combination */
+
+    margin-bottom: 20px;
+}
+.contact_info>p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(215, 212, 212); /* here add colour combination */
+
+    margin-block: 5px;
+}
+.contact_info::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: rgb(227, 226, 226); /* here add colour combination */
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: -1;
+}
+.contact_info:hover::after {
+    top: 0;
+}
+.contact_info:hover h2,
+.contact_info:hover p {
+    color: #670d2f;
+}
+.form_control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.form_inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input_field {
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+.textarea>textarea {
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+}
+.form_button>.d_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+/* Contact section ends */
+/* ------------------------------------------------------------- */
+
+/* footer section starts */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #F8F8F8;
+    padding-block: 40px 60px;
+}
+.top-footer p {
+    font-size: 25px;
+    font-weight: 600;
+}
+.middle-footer .footer-menu {
+    display: flex;
+}
+.footer_menu_list {
+    list-style: none;
+}
+.footer_menu_list a {
+ /* here add colour combination */
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+}
+.bottom-footer{
+    font-size: 14px;
+}
+
+
+/* contact section ends */
+/* -------------------------------------------------------------------------- */
